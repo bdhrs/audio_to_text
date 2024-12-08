@@ -1,23 +1,15 @@
-## Install dependencies
-```shell
-uv insta
+A simple audio-to-test converter using Vosk.
 
-## Download Vosk
-1. Download one of the models from https://alphacephei.com/vosk/models
-    [128MB](https://alphacephei.com/vosk/models/vosk-model-en-us-0.22-lgraph.zip) 
-    [1.8G](https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip)
-2. Unzip 
-3. Put into the project directory    
+## Setup
+1. Install dependencies with ```uv install```
 
-ll
-```
-
-## Audio to text converter
-1. Put the audio file to convert in the `/input` folder
-2. Run the script 
-```shell
-uv run audio_to_text.py
-```
-3. `/output` folder contains text files
-4. `/processed` folder contains processed audio  
+2. Download one of the Vosk models from https://alphacephei.com/vosk/models and unzip into the project directory  
+[128MB vosk-model-en-us-0.22-lgraph](https://alphacephei.com/vosk/models/vosk-model-en-us-0.22-lgraph.zip)  
+[1.8G vosk-model-en-us-0.22](https://alphacephei.com/vosk/models/vosk-model-en-us-0.22.zip)  
+  
+## Run the script
+1. Put the audio file to convert in the `/input` folder.
+2. Run the script with ```uv run audio_to_text.py```.
+3. The `/output` folder will contain text files.
+4. The `/processed` folder will contain processed audio files.  
 
